@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', async () => {
     await page.navigateTo();
-    expect(await page.getTitleText()).toEqual('drum-kit app is running!');
+    expect(await page.getTitleText()).toEqual('logic-shell app is running!');
   });
 
   afterEach(async () => {

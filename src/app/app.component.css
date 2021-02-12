@@ -273,14 +273,6 @@
     margin-right: 4px;
   }
 
-  svg#clouds {
-    position: fixed;
-    bottom: -12vw;
-    left: 0;
-    z-index: -10;
-    width: 1920px;
-  }
-
   .keys {
     display: flex;
     flex: 1;

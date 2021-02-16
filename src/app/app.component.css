@@ -1,7 +1,7 @@
 :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
-    color: black;
+    color: white;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -29,7 +29,6 @@
     font-size: 2rem;
   }
 
-  
   i:hover{
     color:#CD2257;
   }
@@ -46,7 +45,7 @@
     right: 0;
     height: 10vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-color: white;
     color: black;
@@ -55,9 +54,12 @@
   }
 
   .toolbar img {
-    height: 100%;
-    width: auto;
+    width: 65px;
+    height: auto;
+    background-color: white;
     transition: all .7s;
+    border: 2px solid black;
+    border-radius: 15px;
   }
 
   .toolbar img:hover{
@@ -78,24 +80,12 @@
     display: flex;
     margin: 82px auto 32px;
     padding: 0 16px;
-    height: 90vh;
+    height: auto;
     max-width: 960px;
     flex-direction: column;
     align-items: center;
   }
 
-  svg.material-icons {
-    height: 24px;
-    width: auto;
-  }
-
-  svg.material-icons:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  .card svg.material-icons path {
-    fill: #888;
-  }
 
   .card-container {
     display: flex;
@@ -104,17 +94,23 @@
     margin-top: 16px;
   }
 
+
+  .card-container .card{
+    margin:20px 10px;
+  }
+
   .card {
-    border-radius: 4px;
+    color:black;
+    border-radius: 10px;
     border: 1px solid #eee;
     background-color: #fafafa;
     height: 40px;
     width: 200px;
-    margin: 0 8px 16px;
-    padding: 16px;
+    margin: 0px 10px;
+    padding: 16px 16px 16px 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     transition: all 0.2s ease-in-out;
     line-height: 24px;
@@ -125,7 +121,7 @@
   }
 
   .card.card-small {
-    height: 16px;
+    height: 5px;
     width: 168px;
   }
 
@@ -143,43 +139,28 @@
   }
 
   .card.highlight-card {
-    background-color: #1976d2;
+    background-color: #CD2257;
     color: white;
     font-weight: 600;
     border: none;
     width: auto;
-    min-width: 30%;
+    /* min-width: 15%; */
     position: relative;
   }
 
   .card.card.highlight-card span {
-    margin-left: 60px;
-  }
-
-  svg#rocket {
-    width: 80px;
-    position: absolute;
-    left: -10px;
-    top: -24px;
-  }
-
-  svg#rocket-smoke {
-    height: calc(100vh - 95px);
-    position: absolute;
-    top: 10px;
-    right: 180px;
-    z-index: -10;
+    margin-left: 20px;
   }
 
   a,
   a:visited,
   a:hover {
-    color: #1976d2;
+    color: #cd2257;
     text-decoration: none;
   }
 
   a:hover {
-    color: #125699;
+    color: black;
   }
 
   .terminal {
@@ -324,7 +305,7 @@
     }
 
     .card:not(.highlight-card) {
-      height: 16px;
+      height: 5px;
       margin: 8px 0;
     }
 

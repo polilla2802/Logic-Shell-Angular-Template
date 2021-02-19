@@ -1,6 +1,7 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
+import { Basics } from './app/algos/basics';
+import { Evolve } from './app/algos/basics';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
@@ -11,12 +12,6 @@ if (environment.production) {
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 
-function log(message: string) {
-  console.log(message);
-}
-let message = 'Test';
-log(message); 
+Basics();
 
-function recursiveBinarySearch(n: number, arr: any) {
-  let mid = Math.floor(arr.length / 2);
-}
+console.log(Evolve(36, true))

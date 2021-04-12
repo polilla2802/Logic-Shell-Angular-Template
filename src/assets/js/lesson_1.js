@@ -38,9 +38,9 @@ pokemon1.name = "latias";
 /// 3. Hoisting ///
 // hoisting is to asign a variable even if it is no declared first //
 
-age = 26;
-// console.log(age);
-var age;
+count = 26;
+// console.log(count);
+var count;
 
 // it works diferent with let and const //
 
@@ -81,20 +81,82 @@ var fc = (a, b) => a + b;
 // setTimeout(() => console.log("timeout"), 1000);
 
 /// 5. this keyword ///
+
 // named function //
 function fn1() {
   console.log(this);
 }
-fn1();
-
-// add button to html using .this //
-
-var button = document.querySelector('button');
+// fn1();
 
 // arrow function //
 var fnbutton = () => console.log(this);
-fn2();
-// both refer to the global context //
+// fnbutton();
 
-button.addEventListener('click',fnbutton);
+// both named and arrow refer to the global context //
 
+// add button to html using .this //
+
+// var button = document.querySelector('button');
+
+// button.addEventListener('click',fn1);
+
+// named function refers to the element (button) element depending where the function is called //
+
+// button.addEventListener('click',fn1);
+
+// arrow function refers to the context where the function is declared //
+
+/// 6. Functions and default parameters ///
+
+let a = 100;
+function isEqualTo(number, compare = a){
+  console.log(number);
+  console.log(compare);
+  return number == compare;
+}
+
+// console.log(isEqualTo(10));
+
+/// 7. Object Literal Extensions ///
+
+// if you have variables with the same name as the object properties, it will take them as default // 
+let diginame = "agumon";
+let size = "small";
+
+let digimon = {
+  diginame,
+  size,
+  greet(){
+    console.log(this.diginame);
+  },
+  level: 32 // they can still be overwritten if defined inside the object // 
+};
+
+// digimon.greet();
+
+// Personalized object property name //
+
+let animal = {
+  "animal name": "owl",
+  size,
+  "personalized function"(){
+    console.log(animal["animal name"]);
+  },
+  level: 32 // they can still be overwritten if defined inside the object // 
+};
+
+// animal["personalized function"]();
+
+// Dynamic Fields //
+let age = 25;
+let ageField = "age";
+
+let job = {
+  job: "progammer",
+  salary: 11000,
+  [ageField]:32
+};
+console.log(job);
+console.log(job.age);
+console.log(job[ageField]);
+console.log(job["age"]);

@@ -14,3 +14,4 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 Basics();
 
 // console.log(Evolve(36, true));
+

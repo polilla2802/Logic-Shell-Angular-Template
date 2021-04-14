@@ -50,6 +50,3 @@ export function Basics(): void {
 
     console.log(Evolve(36, false));
 }
-
-
-

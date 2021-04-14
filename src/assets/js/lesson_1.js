@@ -22,7 +22,7 @@ const SPELLS = ["patronum", "wingardium", "abracadabra"];
 SPELLS.push("alojomora");
 // console.log(SPELLS);
 
-// also objects //
+// also objects can be changed  //
 const pokemon1 = {
   name: "latios",
   type: "dragon",
@@ -142,7 +142,6 @@ let animal = {
   "personalized function"(){
     console.log(animal["animal name"]);
   },
-  level: 32 // they can still be overwritten if defined inside the object // 
 };
 
 // animal["personalized function"]();
@@ -156,7 +155,8 @@ let job = {
   salary: 11000,
   [ageField]:32
 };
-console.log(job);
-console.log(job.age);
-console.log(job[ageField]);
-console.log(job["age"]);
+
+// console.log(job);
+// console.log(job.age);
+// console.log(job[ageField]);
+// console.log(job["age"]);

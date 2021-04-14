@@ -1,6 +1,6 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { Basics, Evolve } from './assets/ts/basics';
+import { Basics, Evolve } from './assets/help/ts/basics';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 

@@ -1,4 +1,35 @@
-1. Scrum: The basics
+I.-Scrum: The basics
 
 it allows teams to deliver milestones as small pieces
+
+Pasos para realizar Scrum (modulos)
+
+II.-Desventajas de Cascada
+1.-Toma de requerimientos
+    2.-Diseño
+        3.Implementación
+            4.-Pruebas
+
+En caso de ser necesario se regresa a un modulo anterior.
+
+Se bloquean los modulos de acuerdo a las restrucciones o problemas encontrados y se vuelve a implementar.
+
+1.-Toma de requerimientos
+    2.-Diseño_______↓
+    ^___
+        3.Implementación
+            4.-Pruebas
+
+Se pierde tiempo en la repetición de tareas.
+
+Se pierde dinero, ya que hay empleados que pierden tiempo, dinero o motivacion. 
+Ya que estos dependen de los demas en acabar sus tareas
+
+3.-Ventajas de Scrum
+
+En Srcrum a diferencia de cascada que tiene una idea clara del producto final.
+Scrum va evolucionando durante eld desarrollo del producto, para calibrar, adaptar y volver a repensar como va a ser el producto,
+asi siempre va a estar actualizado conforme a las necesidades del cliente.
+
+Siempre un producto funcional en todo momento.
 

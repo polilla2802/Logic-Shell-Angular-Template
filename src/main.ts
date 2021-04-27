@@ -11,7 +11,7 @@ if (environment.production) {
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 
-Basics();
+// Basics();
 
 // console.log(Evolve(36, true));
 

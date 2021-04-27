@@ -160,3 +160,19 @@ let job = {
 // console.log(job.age);
 // console.log(job[ageField]);
 // console.log(job["age"]);
+
+// 8.- Rest operator
+
+// let's create an array
+
+let array = [1,2,3,4,5]
+
+var sumUp = (toAdd) => {
+  let result = 0;
+  for (let i = 0; i < toAdd.length; i++){
+    result += toAdd[i];
+  }
+  return result;
+}
+
+console.log(sumUp(array));
